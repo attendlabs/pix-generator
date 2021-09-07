@@ -1,7 +1,13 @@
-const teste = (): string => {
-	return 'teste';
+import QRCode from 'qrcode';
+
+export const generateQR = async (text: string): Promise<string> => {
+	try {
+		return await QRCode.toDataURL(text);
+	} catch (err) {
+		throw new Error('Erro ao gerar qrcode');
+	}
 };
 
-
-export default teste;
-
+( async() => {
+	console.log(await generateQR('teste'));
+})();

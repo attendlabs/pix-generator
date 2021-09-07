@@ -1,0 +1,15 @@
+export const PAYLOAD_FORMAT_INDICATOR = '00';
+export const MERCHANT_ACCOUNT = '26';
+export const MERCHANT_ACCOUNT_GUI = '00';
+export const MERCHANT_ACCOUNT_KEY = '01';
+export const MERCHANT_ACCOUNT_DESCRIPTION = '02';
+export const MERCHANT_CATEGORY_CODE = '52';
+export const TRANSACTION_CURRENCY = '53';
+export const TRANSACTION_AMOUNT = '54';
+export const COUNTRY_CODE = '58';
+export const MERCHANT_NAME = '59';
+export const MERCHANT_CITY = '60';
+export const ADDITIONAL_DATA_FIELD_TEMPLATE = '62';
+export const ADDITIONAL_DATA_FIELD_TEMPLATE_TXID = '05';
+export const CRC16 = '63';
+export const MERCHANT_GUI_URL = 'br.gov.bcb.pix';
