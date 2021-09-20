@@ -1,5 +1,5 @@
 import { get_pad_length, getCRC16 } from '../src/helpers';
-import { CRC16 } from '../src/constants';
+import { Config } from '../src/constants';
 
 
 test('it should pad the string length with zero', () => {
@@ -14,9 +14,9 @@ test('it should pad the string length with zero', () => {
 
 test('it should get CRC16 correctly', () => {
 
-	const result = getCRC16(CRC16, '12345');
+	const result = getCRC16(Config.CRC16, '12345');
 	expect(result).toBe('6304AD75');
 
-	const result2 = getCRC16(CRC16, '101010');
+	const result2 = getCRC16(Config.CRC16, '101010');
 	expect(result2).toBe('6304D62');
 });
