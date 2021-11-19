@@ -23,7 +23,7 @@ export default class PIX {
 
 		const payload = `${payload_indicator}${merchant_account}${merchant_category}${translated_currency}${country}${merchant_name}${merchant_city}${additional_field}`;
 
-		return `${payload}${getCRC16(CRC16, payload)}`;
+		return `${payload}${getCRC16(Config.CRC16, payload)}`;
 	}
 
 	static qrcode = async (code: string): Promise<string|Error> => {
